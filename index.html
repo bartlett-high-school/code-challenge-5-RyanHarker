@@ -1,31 +1,24 @@
-<!-- Code Challenge #5 | 25 Points -->
-
-<!-- Directions:
-
-Step 1:
-Select all of this document, copy and paste it into a new document in sublime text.
-
-Step 2:
-Inside of the .container div, insert typography tags h2, h3, h4, h5, h6. Add some content inside of each tag. 
-
-Step 3: 
-After each h tag, add a p tag with some content inside of it.
-
-Step 3:
-In the style tag, write some CSS for each of the tags you added to create a well-designed typography style tile. Consider things like font-family, font-size, color, letter-spacing, line-height, etc.
-
-Step 4: 
-Paste all the code from your sublime document back into github and commit your changes.
-
-BONUS: Implement a web font from font-squirrel correctly for 3 extra points.
-
--->
-
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>Code Challenge #5</title>
 		<style>
+			@font-face {
+    			font-family: 'quicksandregular';
+    			src: url('fonts/quicksand-regular-webfont.woff2') format('woff2'),
+        		url('fonts/quicksand-regular-webfont.woff') format('woff');
+   				font-weight: normal;
+    			font-style: normal;
+    		}
+
+    		@font-face {
+    			font-family: 'sinkin_sans100_thin';
+   				src: url('fonts/sinkinsans-100thin-webfont.woff2') format('woff2'),
+         		url('fonts/sinkinsans-100thin-webfont.woff') format('woff');
+   			 	font-weight: normal;
+    			font-style: normal;
+    		}
+
 			body {
 				margin: 0;
 				padding: 0;
@@ -39,6 +32,44 @@ BONUS: Implement a web font from font-squirrel correctly for 3 extra points.
 			section {
 				padding: 25px 0;
 			}
+			h2 {
+				color: red;
+				font-size: 20px;
+				padding-bottom: 30px;
+				padding-top: 30px;
+				font-family: 'quicksandregular';
+			}
+			h3 {
+				color: green;
+				font-size: 20px;
+				padding-bottom: 25px;
+				padding-top: 25px;
+				font-family: 'quicksandregular';
+			}
+			h4 {
+				color: blue;
+				font-size: 20px;
+				padding-bottom: 20px;
+				padding-top: 20px;
+				font-family: 'quicksandregular';
+			}
+			h5 {
+				color: yellow;
+				font-size: 20px;
+				padding-bottom: 15px;
+				padding-top: 15px;
+				font-family: 'quicksandregular';
+			}
+			h6 {
+				color: purple;
+				font-size: 20px;
+				padding: 0 auto;
+				font-family: 'quicksandregular';
+			}
+			p {
+				font-size: 15px;
+				font-family: 'sinkin_sans100_thin';
+			}
 		</style>
 	</head>
 	<body>
@@ -47,6 +78,16 @@ BONUS: Implement a web font from font-squirrel correctly for 3 extra points.
 		</header>
 		<section>
 			<div class="container">
+				<h2>Red</h2>
+				<p>Red readers ride rafts while reheating leftover red robin burgers.</p>
+				<h3>Green</h3>
+				<p>Green grass grows gross boogers growilng at great big granola grains.</p>
+				<h4>Blue</h4>
+				<p>Blue bikes bite at best banana bars but don't break when beaten or burnt.</p>
+				<h5>Yellow</h5>
+				<p>Yellow yellers yet to yell will yack up yucky stuff.</p>
+				<h6>Purple</h6>
+				<p>Purple pinaples should probably be properly pre-heated because they are problematic. </p>
 			</div>
 		</section>
 		<footer>
